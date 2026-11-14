@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Kip Live Caption</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px;
+            background-color: #f9fafb;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 36px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        h1 {
+            color: #111827;
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .last-updated {
+            color: #6b7280;
+            font-size: 0.875rem;
+            margin-bottom: 24px;
+        }
+        h2 {
+            color: #1f2937;
+            font-size: 1.25rem;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 6px;
+        }
+        p, li {
+            font-size: 1rem;
+            color: #374151;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .highlight-box {
+            background-color: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 12px 16px;
+            margin: 16px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        footer {
+            margin-top: 36px;
+            padding-top: 16px;
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.875rem;
+            color: #6b7280;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="last-updated">Effective Date: November 14, 2026 | Last Updated: November 14, 2026</div>
+
+        <p>This Privacy Policy describes how <strong>Kip Live Caption</strong> ("we", "us", or "our") collects, uses, and safeguards information when you use our mobile and Android TV application.</p>
+
+        <div class="highlight-box">
+            <strong>Key Summary:</strong> We believe in privacy. Kip Live Caption does <strong>NOT</strong> record, collect, store, or sell your personal audio recordings or transcriptions on our own servers. Audio processing is transient and strictly used for real-time live subtitle display.
+        </div>
+
+        <h2>1. Information We Access & Process</h2>
+        <ul>
+            <li><strong>Audio Data (Microphone & Playback):</strong> To provide real-time subtitles and translation, the application accesses either your device microphone or system audio playback (via Android's official MediaProjection API). Audio data is buffered temporarily in volatile memory (RAM) and immediately discarded once transcription is complete.</li>
+            <li><strong>Speech & Transcribed Text:</strong> Spoken words converted into text are transiently processed to translate into your desired target language and displayed on your floating subtitle overlay.</li>
+            <li><strong>Device Capabilities & Settings:</strong> User preferences such as selected languages, font size, opacity, and audio input modes are stored locally on your device via Android SharedPreferences.</li>
+        </ul>
+
+        <h2>2. Third-Party AI & Translation Services</h2>
+        <p>Kip Live Caption integrates with third-party Speech-to-Text and translation providers chosen by the user (such as Google Gemini, Groq, Deepgram, and OpenRouter):</p>
+        <ul>
+            <li>When you use cloud-based STT or LLM translation providers, transient audio or text prompts are transmitted over secure encrypted connections (HTTPS/TLS) directly to the respective provider's official API endpoint.</li>
+            <li>If you provide your own API keys ("Bring Your Own Key"), your keys are stored securely on your local device only and are never transmitted to us.</li>
+            <li>Data processing by third-party AI providers is governed by their respective privacy policies and developer terms of service.</li>
+        </ul>
+
+        <h2>3. Advertisements (Google AdMob)</h2>
+        <p>The Google Play version of this application uses <strong>Google AdMob</strong> to display non-disruptive banner advertisements within the settings dashboard:</p>
+        <ul>
+            <li>AdMob may collect and process information such as your device's Advertising ID (GAID), IP address, and interaction data to serve ads in compliance with Google Play Developer Policies.</li>
+            <li>For more information on how Google manages advertising data, please review the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Privacy Policy</a>.</li>
+        </ul>
+
+        <h2>4. Permissions & Justification</h2>
+        <ul>
+            <li><strong>RECORD_AUDIO:</strong> Required to capture spoken voice via the microphone for live transcription.</li>
+            <li><strong>SYSTEM_ALERT_WINDOW:</strong> Required to display the floating live subtitle window over other video players, games, or apps.</li>
+            <li><strong>FOREGROUND_SERVICE (Microphone & MediaProjection):</strong> Required to keep real-time live captioning running smoothly when you switch to other apps or play media.</li>
+            <li><strong>INTERNET:</strong> Required for cloud AI speech-to-text models, online translation, and AdMob banner ads.</li>
+        </ul>
+
+        <h2>5. Data Retention & Deletion</h2>
+        <p>We do not store your audio data or transcripts on any remote server. Everything is ephemeral and discarded in real-time. You can clear your locally saved preferences and API keys at any time by clearing application data in Android Settings or uninstalling the app.</p>
+
+        <h2>6. Children's Privacy</h2>
+        <p>Kip Live Caption is a general audience utility application and does not knowingly collect personal identifiable information from children under 13.</p>
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>
+        <p><strong>Email:</strong> support@kipidapp.com<br>
+        <strong>Developer:</strong> KipidApp Team (@zuaxnull)</p>
+
+        <footer>
+            &copy; 2026 Kip Live Caption. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
+
